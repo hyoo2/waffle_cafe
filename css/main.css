@@ -1,0 +1,69 @@
+/* hr tags - 
+hr.style1{
+	border-top: 1px solid #8c8b8b;
+}
+
+Gradient
+hr.style13 {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+Fades out from center
+hr.style14 { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+} */
+
+body {
+  background-color: #D2B48C;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+a:link {
+  color: grey;
+  text-decoration: none;
+  padding: 10px 14px;
+}
+
+a:hover {
+  background-color: grey;
+}
+
+.leftColumn {
+  float: left;
+  width: 45%;
+}
+
+.rightColumn {
+  float: right;
+  width: 45%;
+}
+
+.columnsContainer:after {
+  content:"";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 480px) {
+  .leftColumn,
+  .rightColumn {
+    float: none;
+    width: auto;
+  }
+}
+
+footer li {
+  list-style: none;
+  display: inline-block;
+}
