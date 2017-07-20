@@ -17,6 +17,8 @@
                 <p>Welcome!</p>
             </header>
 
+            <hr class="horizontalLine">
+
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -26,40 +28,54 @@
                 </ul>
             </nav>
 
-            <!-- Photo gallery -->
-            <section>
-                <div>
-
-                </div>
-            </section>
-
-            <!-- Sidebar of information -->
-            <section class="sidebar">
+            <!-- Main content on Home Page -->
+            <section class="mainContent">
                 <div class="columnsContainer">
                     <div class="leftColumn">
+                        <!-- Photo carousel -->
+                        <div class="carouselBox active">
+                            <ul id="carouselContent">
+                                <li><img src="images/waffles-chocolate-syrup.jpeg"></li>
+                                <li><img src="images/waffles-whipped-cream-chocolate-syrup.jpg"></li>
+                                <li><img src="images/waffles-blueberries-strawberries.jpeg"></li>
+                                <li><img src="images/waffles-bananas-powdered-sugar.jpeg"></li>
+                                <li><img src="images/waffles-raspberries-ice-cream-powdered-sugar.jpeg"></li>
+                                <li><img src="images/waffles-apple-syrup-ice-cream.jpg"></li>
+                            
+                            <button class="prev">
+                                <span class="offscreen">Previous</span>
+                            </button>
 
+                            <button class="next">
+                                <span class="offscreen">Next</span>
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="rightColumn">
-                        <div class="cafeHours">
-                            <h4>Cafe Hours</h4>
-                            <p>Monday-Thursday 9am-8pm</p>
-                            <p>Friday-Sunday 8am-9pm</p>
-                        </div>
+                    <!-- NEEDS HELP!! -->
+                    <div class="verticalLine">
 
-                        <div class="phoneNumber">
-                            <h4>Phone Number</h4>
-                            <a href="tel:1234567890">(123) 456-7890</a></p>
-                        </div>
+                        <div class="rightColumn">
+                            <div class="cafeHours">
+                                <h4>Cafe Hours</h4>
+                                <p>Monday-Thursday 9am-8pm</p>
+                                <p>Friday-Sunday 8am-9pm</p>
+                            </div>
 
-                        <div class="address">
-                            <h4>Address</h4>
-                            <p>12345 123rd Place</p>
-                            <p>Abcde, FG 12345</p>
-                        </div>
-                        
-                        <div class="mailingList">
-                            <h4>Mailing List</h4>
+                            <div class="phoneNumber">
+                                <h4>Phone Number</h4>
+                                <a href="tel:1234567890">(123) 456-7890</a></p>
+                            </div>
+
+                            <div class="address">
+                                <h4>Address</h4>
+                                <p>12345 123rd Place</p>
+                                <p>Abcde, FG 12345</p>
+                            </div>
+                            
+                            <div class="mailingList">
+                                <h4>Mailing List</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
