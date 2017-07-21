@@ -5,22 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Keywords" content="Waffle Cafe, waffles">
         <meta name="Description" content="Website for Waffle Cafe">
+
         <link rel="icon" href="images/waffle_icon.jpg" type="image/x-icon">
         <title>Waffle Cafe</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
     </head>
     
     <body>
         <div class="body-wrap">
             <header>
-                <h1>Waffle Cafe</h1>
-                <p>Welcome!</p>
+                <img src="images/header-image.jpg" class="headerImage">
+                <div class="header">
+                    <h2>Waffle Cafe</h2>
+                    <p>Welcome!</p>
+                </div>
             </header>
 
+            <!-- Horizontal line between header and global nav bar -->
             <hr class="horizontalLine">
 
-            <nav>
+            <!-- Global nav bar -->
+            <nav class="navBar" id="myNavBar">
                 <ul>
+                    <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="html/about.html">About Us</a></li>
                     <li><a href="html/menu.html">Menu</a></li>
@@ -51,31 +60,23 @@
                             </button>
                         </div>
                     </div>
+                    
+                    <div class="rightColumn">
+                        <div class="cafeHours">
+                            <h3>Cafe Hours</h3>
+                            <p>Mon-Thu 9am-8pm</p>
+                            <p>Fri-Sun 8am-9pm</p>
+                        </div>
 
-                    <!-- NEEDS HELP!! -->
-                    <div class="verticalLine">
+                        <div class="phoneNumber">
+                            <h3>Phone Number</h3>
+                            <a href="tel:1234567890" id="number">(123) 456-7890</a></p>
+                        </div>
 
-                        <div class="rightColumn">
-                            <div class="cafeHours">
-                                <h4>Cafe Hours</h4>
-                                <p>Monday-Thursday 9am-8pm</p>
-                                <p>Friday-Sunday 8am-9pm</p>
-                            </div>
-
-                            <div class="phoneNumber">
-                                <h4>Phone Number</h4>
-                                <a href="tel:1234567890">(123) 456-7890</a></p>
-                            </div>
-
-                            <div class="address">
-                                <h4>Address</h4>
-                                <p>12345 123rd Place</p>
-                                <p>Abcde, FG 12345</p>
-                            </div>
-                            
-                            <div class="mailingList">
-                                <h4>Mailing List</h4>
-                            </div>
+                        <div class="address">
+                            <h3>Address</h3>
+                            <p>12345 123rd Place</p>
+                            <p>Abcde, FG 12345</p>
                         </div>
                     </div>
                 </div>

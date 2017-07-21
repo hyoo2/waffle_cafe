@@ -1,39 +1,59 @@
 body {
-  background-color: #D2B48C;
-  font-family: helvetica, sans-serif;
-  font-size: 16px;
+  background-color: #d2b48c;
 }
 
 .body-wrap {
+  font-family: 'Lora', serif;
+  font-size: 16px;
   background-color: #FFFFFF;
   display: inline-block;
   text-align: center;
 }
 
+.header {
+   display: inline-block;
+/*    text-align: left;
+  padding: 1.5em 0 0 20em; */
+}
+
+.headerImage {
+  max-width: 30%;
+  float: left;
+  padding: 1em 0em 1em 5em;;
+}
+
 .horizontalLine {
   border: 0; 
   height: 1px; 
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #9f6934, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #9f6934, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #9f6934, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #9f6934, #f0f0f0); 
   width: 80%;
 }
 
-nav li {
+.navBar ul {
+  padding: 0;
+}
+
+.navBar li {
   list-style: none;
   display: inline-block;
   font-size: 90%;
 }
 
-a:link {
-  color: #808080;
-  text-decoration: none;
-  padding: 10px 14px;
+.navBar .icon {
+  display: none;
 }
 
-a:hover {
-  background-color: #D3D3D3;
+a:link, a:visited {
+  color: #a98307;
+  text-decoration: none;
+  padding: 0.5em 0.5em;
+}
+
+a:hover, a:active {
+  background-color: #e2d5ac;
 }
 
 .carouselBox {
@@ -61,7 +81,6 @@ a:hover {
 #carouselContent img {
   max-width: 40%;
   height: auto;
-/*   z-index: 2; */
 }
 
 .active {
@@ -85,7 +104,6 @@ a:hover {
 .active .buttons {
   padding: 5px 0;
   background: #EEE;
-/*   z-index: 10; */
   position: relative;
 }
 
@@ -110,26 +128,26 @@ a:hover {
 
 .leftColumn {
   float: left;
-  width: 45%;
-}
-
-/* NEEDS HELP!!  */
-.verticalLine {
-  width: 1px;
-  height: 100%;
-  float: left;
-  background-image: -webkit-linear-gradient(#f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -moz-linear-gradient(#f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -ms-linear-gradient(#f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(#f0f0f0, #8c8b8b, #f0f0f0); 
+  width: 70%;
 }
 
 .rightColumn {
   float: right;
-  width: 45%;
-  font-size: 80%;
+  width: 25%;
+  font-size: 70%;
   text-align: left;
-  padding: 1em;
+  padding-left: 1em;
+  margin-bottom: 1em;
+  border-left: thin solid #e2d5ac;
+}
+
+.rightColumn h3 {
+  color: #52361b;
+  font-style: bold;
+}
+
+.rightColumn p {
+  padding-left: 0.5em;
 }
 
 .columnsContainer::after {
@@ -138,28 +156,87 @@ a:hover {
   clear: both;
 }
 
-@media screen and (max-width: 1920px) {
-  .body-wrap {
-    left: 25%;
-    top: 0;
-    position: absolute;
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .leftColumn,
-  .rightColumn {
-    float: none;
-    width: auto;
-  }
-}
-
 footer {
   font-size: 90%;
+  background-color: #52361b;
+  padding: 0.1em 0em;
+}
+
+footer ul {
+  padding: 0;
 }
 
 footer li {
   list-style: none;
   display: inline-block;
+}
+
+footer p {
+  font-size: 80%;
+  color: #9f6934;
+}
+
+@media screen and (max-width: 1920px) {
+  .body-wrap {
+    left: 20%;
+    top: 0;
+    position: absolute;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .body-wrap {
+    font-size: 80%;
+  }
+
+  .headerImage {
+    padding-left: 5%;
+  }
+
+  .navBar ul {
+    padding: 0;
+    text-align: initial;
+  }
+  
+  .navBar a:not(.icon) {
+    display: none;
+  }
+
+  .navBar a.icon {
+    float: left;
+    display: block;
+  }
+
+  .navBar.responsive {
+    position: relative;
+  }
+
+  .navBar.responsive li:not(.icon) {
+    display: block;
+    padding-left: 1em;
+  }
+
+  .navBar.responsive a {
+    float: none;
+    display: block;
+  }
+  
+/*   .columnsContainer {
+    position: center;
+  } */
+
+  .leftColumn,
+  .rightColumn {
+    float: none;
+    width: auto;
+  }
+
+  .rightColumn {
+    border-left: none;
+  }
+
+  footer ul {
+    padding: 0;
+  }
 }

@@ -1,5 +1,20 @@
 "use strict";
 
+// responsive global nav bar --> sidebar menu with button
+function myFunction() {
+    var x = document.getElementById("myNavBar");
+
+    var y = x.className;
+    console.log(y);
+    console.log(x.c);
+    
+    if (x.className === "navBar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navBar";
+    }
+}
+/* 
 // photo carousel on home page
 var carousel = (function() {
     var box = document.querySelector('.carouselBox');
@@ -11,13 +26,13 @@ var carousel = (function() {
     var amount = items.length;
     var current = items[0];
 
-    console.log(current);
+    //console.log(current);
 
     box.classList.add('active');
 
     function navigate(direction) {
         current.classList.remove('current');
-        console.log(current);
+        //console.log(current);
         counter = counter + direction;
         
         if (direction === -1 && counter < 0) {
@@ -41,4 +56,4 @@ var carousel = (function() {
     });
 
     navigate(0);
-})();
+})(); */
