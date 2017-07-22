@@ -21,43 +21,36 @@
                     <h2>Waffle Cafe</h2>
                     <p>Welcome!</p>
                 </div>
+
+                <!-- Horizontal line between header and global nav bar -->
+                <hr class="horizontalLine">
+
+                <!-- Global nav bar -->
+                <nav class="navBar" id="myNavBar">
+                    <ul>
+                        <li class="iconClass"><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="html/about.html">About Us</a></li>
+                        <li><a href="html/menu.html">Menu</a></li>
+                        <li><a href="html/contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
             </header>
 
-            <!-- Horizontal line between header and global nav bar -->
-            <hr class="horizontalLine">
 
-            <!-- Global nav bar -->
-            <nav class="navBar" id="myNavBar">
-                <ul>
-                    <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="html/about.html">About Us</a></li>
-                    <li><a href="html/menu.html">Menu</a></li>
-                    <li><a href="html/contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
 
             <!-- Main content on Home Page -->
             <section class="mainContent">
                 <div class="columnsContainer">
                     <div class="leftColumn">
-                        <!-- Photo carousel -->
-                        <div class="carouselBox active">
-                            <ul id="carouselContent">
+                        <div class="photos">
+                            <ul id="waffle-photos">
                                 <li><img src="images/waffles-chocolate-syrup.jpeg"></li>
                                 <li><img src="images/waffles-whipped-cream-chocolate-syrup.jpg"></li>
                                 <li><img src="images/waffles-blueberries-strawberries.jpeg"></li>
                                 <li><img src="images/waffles-bananas-powdered-sugar.jpeg"></li>
                                 <li><img src="images/waffles-raspberries-ice-cream-powdered-sugar.jpeg"></li>
                                 <li><img src="images/waffles-apple-syrup-ice-cream.jpg"></li>
-                            
-                            <button class="prev">
-                                <span class="offscreen">Previous</span>
-                            </button>
-
-                            <button class="next">
-                                <span class="offscreen">Next</span>
-                            </button>
                         </div>
                     </div>
                     
