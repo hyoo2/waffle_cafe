@@ -1,0 +1,23 @@
+.about h3 {
+  text-align: left;
+  margin-left: 17%;
+  color: #52361b;
+}
+
+.about p {
+    font-size: 90%;
+    text-align: left;
+    margin: 0 10% 5% 17%;
+}
+
+@media screen and (max-width: 600px) { 
+  .about h3 {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .about p {
+    text-align: justify;
+  }
+}
